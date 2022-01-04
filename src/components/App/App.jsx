@@ -3,6 +3,7 @@ import AppHeader from '../AppHeader/AppHeader';
 import AppContainer from '../AppContainer/AppContainer';
 import { Wrapper, Container } from './App.styles';
 import Checkbox from '../../shared/Checkbox/Checkbox';
+import LineChart from '../../shared/LineChart/LineChart';
 
 function App() {
   const [alface, setAlface] = useState();
@@ -22,7 +23,12 @@ function App() {
             </div>
           }
           middle={<div>Sua lista de compras</div>}
-          right={<div>Estatísticas</div>}
+          right={
+            <div>
+              Estatísticas
+              <LineChart />
+            </div>
+          }
         />
       </Container>
     </Wrapper>
